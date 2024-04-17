@@ -1,0 +1,183 @@
+/*
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+	background:#ccc;
+}
+*/
+ul{list-style-type:none;}
+
+
+#usuarios_online{
+	position:absolute;
+	top:50px;
+	/* right:0; */
+	width:240px;
+	height:100%;
+	background:linear-gradient(to right, #ccc, #fff 1%);
+	border-left:1px solid #999;
+}
+
+#usuarios_online ul li{
+	 float:left;
+	 width:100%;
+	 border:1px solid transparent;
+	 padding:5px;
+	 margin-left:-1px;
+	 margin-top:-1px;
+	 position:relative;
+	}
+	
+	#usuarios_online ul li:hover{
+		border-color:#999;
+		background:linear-gradient (to right, #ccc, #fff 60%);
+		background:#ccc;
+		color:#000;
+		border-bottom:1px dashed;
+	}
+	
+#usuarios_online ul li a{
+	text-decoration:none;
+	float:left;
+	width:70%;
+	 height:100%;
+	margin-left:10px;
+	font:14px Tahoma, arial, georgia;
+	color:#666;
+    line-height:40px;
+
+}
+	
+.imgSmall{
+	float:left;
+	width:40px;
+	height:40px;
+	overflow:hidden;
+	border-radius:none;
+}
+
+.imgSmall{
+	width:100%;
+	height:100%;
+	}
+	
+.estado{
+	position:absolute;
+	right:8px;
+	top:8px;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#666;
+}
+.estado.off{
+	background:#ccc;
+	}
+.estado.on{
+	background:#090;
+	}
+	
+	/**Aside dos chats**/
+	
+#chats{
+	  position:absolute;
+	  bottom:0;
+	  left:0;
+	  width:85.4%;	  
+}
+
+/**Janelas do chat**/
+
+.window{
+	float:left;
+	width:auto;
+	margin-left:5px;
+	height:auto;
+	overflow:hidden;
+	border-radius:4px;
+}
+.window .header_window{
+	  float:left;
+	  background:#00ACE6;
+	  padding:5px;
+	  width:270px;
+	  position:relative;
+	  cursor:pointer;
+	  }
+.window .header_window .fechar{
+	text-decoration:none;
+	float:left;
+	color:white;
+	font:16px Tahoma, arial, georgia;
+	padding:0 15px 0 0;
+}
+.window .header_window .name{
+	float:left;
+	font:16px Tahoma, arial, georgia;
+	color:white;
+}
+.window .body{
+	float:left;
+	width:100px;
+}
+.window .body .mensagens{
+	float:left;
+	width:100%;
+	background:#ebebeb;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	height:230;
+	overflow-y:auto;
+	overflow-x:hidden;
+	padding:4px;
+} 
+.mensagens ul{
+	float:left;
+	width:100%;	
+}
+.mensagens ul li{
+	float:right;
+	width:80%;
+	background:linear-gradient (to bottom #fff, #ccc 130%);
+	border:1px solid #999;
+	border-radius:4px;
+	position:relative;
+	padding:4px;
+	margin-bottom:8px;
+}
+.mensagens ul li .imgSmall{
+	position:relative;
+	width:35px;
+	height:35px;
+	left:-45px;
+}
+.mensagens ul li p{
+	font:14px arial, georgia;
+	color:#666;
+}
+.mensagens ul li.eu{
+	float:left;
+	background:#880000;
+}
+.mensagens::-webkit-scrollbar{width:3px;}
+.mensagens::-webkit-scrollbar-track{background-color:#666; border-left:1px solid #ebebeb; border-right:1px solid #ebebeb;}
+.mensagens::-webkit-scrollbar-thumb:{background-color:#666;}
+.mensagens::-webkit-scrollbar-thumb:hover{background-color:#069;}
+
+.window .body .enviar_mensagem{
+	float:left;
+	width:100%;
+	height:230px;
+}
+.window .body .enviar_mensagem .input{
+    float:left;
+	width:100%;
+	background:white;
+	border:1px solid #999;
+	outline:none;
+}
