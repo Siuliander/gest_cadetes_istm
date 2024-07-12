@@ -1,20 +1,7 @@
 {
 	"function" : {
+		"*.php" : {
 			"runtime" : "vercel-php@0.4.0"
+		}
 	}
-	
-	"version": 2,
-	"builds": [
-		{
-			"src": "/",
-			"use": "vercel-php@0.4.0"
-		}
-	],
-	"routes": [
-		{
-			"src": "(.*)",
-			"dest": "/"
-		}
-	],
-	
 }
